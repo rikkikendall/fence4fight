@@ -13,7 +13,6 @@ class AppLogo extends Component {
   render() {
     return (
       <div>
-        <Card className="Logo">
         <Desktop>
           <img src= {logo}
           width="350"
@@ -24,7 +23,6 @@ class AppLogo extends Component {
           width="110"
           height="120" />
           </Mobile>
-        </Card>
       </div>
     );
   }

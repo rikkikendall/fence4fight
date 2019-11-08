@@ -10,8 +10,7 @@ class Footer extends Component {
       <footer className="App-header">
         <img src= {logo}
         width="100"
-        height="100"/>
-        <br />
+        height="120"/>
         <Typography variant="h5"> Created by Rikki Kendall & <br /> Thea Dowrich </Typography>
         <br />
       </footer>

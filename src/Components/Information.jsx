@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // Material UI Components
 import Typography from '@material-ui/core/Typography';
-import { Paper, Card, LinearProgress } from '@material-ui/core/';
+import { Paper, Card, LinearProgress, Grid } from '@material-ui/core/';
 // Video React Components
 import ReactPlayer from 'react-player'
 // Logos
@@ -26,15 +26,16 @@ class Information extends Component {
         <Paper elevation={3} rounded="true">
           <br />
           <Typography variant="h2" component="h3">
-          Join Duke Fencing as we Fence for the Fight against Breast Cancer
+          Join Duke Fencing
+          </Typography>
+          <Typography variant="h2" component="h3">
+          As we Fence for the Fight
           </Typography>
           <AppLogo />
-          <Typography variant="h6" component="h3">
-            Breast Cancer Affects Everyone
+          <Typography variant="h2" component="h3">
+          Against Breast Cancer!
           </Typography>
-          <Typography variant="h5" component="h2">
-            Show your support by pledging funds for the fencing team!
-          </Typography>
+          <br />
           <br />
           <Desktop>
             <div align="center">
@@ -45,44 +46,69 @@ class Information extends Component {
             </div>
           </Desktop>
           <Paper>
-            <Card>
+          <Typography variant="h3" component="h5">
+            Breast Cancer Affects Everyone
+          </Typography>
             <br />
-            <Typography variant="display1" component="h3">
-              Help the Duke Baseball and Softball teams <br /> strikeout pediatric cancer by joining our team.
+            <Typography variant="h5" component="h3">
+              Almost all of us have a
+              <br />
+              family member, a friend, or a colleague
+              <br />
+              who has or is fighting this awful disease.
+              <br />
+              And while progress has been made, we still have a
+              <br />
+              long way to go in curing and caring for those who are stricken
+              <br />
+              For the Duke Fencing Family, this disease has struck very close to home.
+              <br />
+              Our own Elizabeth Beguinet is carrying on her own fight right now.  Elizabeth, the wife of our head coach Alex,
+              <br />
+              is not just our recruiting coordinator, or travel coordinator, or seamstress for our uniforms.
+              <br />
+              She’s been our confidant, our coach, our on-campus mom, and our family for 34 years.
+              <br />
+              And when a member of our family fights, we all fight.
+              <br />
+              <br />
             </Typography>
+            <Donors />
             <br />
-            <img src= { fencinglogo }
-              width="400"
-              height="400"/>
             <Card style={{ background: '#C84E00' }}>
               <br />
-              <Typography variant="h5" component="h3"> Total raised in the 2018-2019 season to date:
+              <Typography variant="h5" component="h3"> Total raised in the 2019-2020 season to date:
               </Typography>
               <br />
-              <Typography variant="h2"> $17,821.75  </Typography>
+              <Typography variant="h2"> $0.00 </Typography>
               <br/>
               <LinearProgress color="secondary" />
               <br />
             </Card>
             <br />
-            </Card>
+            <img src= { fencinglogo }
+              width="300"
+              height="300"/>
+            <br />
             </Paper>
             <Card style={{ background: '' }}>
               <br />
-              <Typography variant="h5" component="h3">
-                Make a pledge for every strikeout Duke pitchers rack up this season.
+              <div>
+                <Grid container alignItems="center">
+                  <Grid item xs>
+                    <Typography gutterBottom variant="h4">
+                      We want your help in Elizabeth Beguinet's fight against breast cancer.
+                    </Typography>
+                  </Grid>
+                </Grid>
+                <Typography variant="subtitle1" color="textSecondary">
+                Please support both Elizabeth and Duke Fencing by partnering with us
+                and the Duke Cancer Institute by making a pledge to fight Breast Cancer.
                 <br />
-                All funds go directly
-                to support cancer research and patient care at Duke Children’s.
+                </Typography>
                 <br />
-                By filling out the form below, you can choose the level of your pledge or you can make a one-time donation.
-                <br />
-                Last season we threw 575 strikeouts in baseball and 262 in softball (95 in March).
-                <br />
-                We’re planning to make more this year to help the kids!
-                <br />
-                <br />
-              </Typography>
+              </div>
+              <br />
               <DonationForm />
               <br />
             </Card>

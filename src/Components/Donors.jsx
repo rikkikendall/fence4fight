@@ -19,9 +19,9 @@ class Donors extends Component {
           </Grid>
         </Grid>
         <Typography variant="subtitle1" color="textSecondary">
-        Pledgers will receive updates on the team's progress each week
-        <br /> and an invoice for your pledge payment
-        at the conclusion of the <br />  season issued by Duke Children’s Hospital.
+        Your pledges will be totaled at the end of the season and
+        <br /> you will be notified then of your pledge total by
+        <br /> Duke Cancer Development to make payment.
         </Typography>
         <br />
       </div>
@@ -30,16 +30,24 @@ class Donors extends Component {
           You can make a pledge of:
         </Typography>
         <div>
+          <Chip label="$0.10" />
           <Chip label="$0.25" />
           <Chip label="$0.50" />
           <Chip label="$1.00" />
-          <Chip label="$1.50" />
-          <Chip label="$2.00" />
+          <Chip label="$1.75" />
           <Chip label="$2.50" />
         </div>
         <br />
         <Typography gutterBottom variant="subtitle1" color="textSecondary">
           Or make a custom pledge or a one time donation.
+          <br />
+          All money raised goes directly to the Duke Cancer Institute (DCI) and is fully tax deductible; you will receive a receipt from the DCI.
+          <br />
+        </Typography>
+        <br />
+        <Typography gutterBottom variant="h6">
+          For Duke Fencing Alums, we will track pledges by your graduation class.
+          <br /> The graduation class with the highest donation total will be honored with a plaque prominently placed in the fencing gym.
         </Typography>
       </div>
     </div>
